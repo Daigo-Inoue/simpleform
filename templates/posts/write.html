@@ -7,6 +7,8 @@
     <form method="post" action="{% url 'posts:write' %}">
         {% csrf_token %}
         {{ form.as_p }}
+
+        <textarea></textarea>
         <button type="submit" class="button">投稿</button>
     </form>
 {% endblock %}
